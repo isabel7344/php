@@ -12,7 +12,6 @@ Cela pourra être, par exemple, de la forme : **"Le département" + nom du dépa
 
 </p>
  
-
     <?php
   $départementsHautDeFrance[02] = 'Aisne';
   $départementsHautDeFrance[59] = 'Nord';
