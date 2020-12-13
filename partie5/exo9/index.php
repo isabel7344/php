@@ -7,20 +7,21 @@
 </head>
 <body>
     <h1> LES TABLEAUX</h1>
-    <p>Avec le tableau de l'exercice 1 et une boucle, afficher toutes les valeurs de ce tableau.
+    <p>Avec le tableau de l'exercice 5, afficher toutes les valeurs de ce tableau.
 </p>
  
 
     <?php
-      $départementsHautDeFrance[02] = 'Aisne';
-      $départementsHautDeFrance[59] = 'Nord';
-      $départementsHautDeFrance[60] = 'Oise';
-      $départementsHautDeFrance[62] = 'Pas-de-Calais';
-      $départementsHautDeFrance[80] = 'Somme';
-      $départementsHautDeFrance[51] = 'Reims';
-     foreach ($départementsHautDeFrance as $value => $départementsHautDeFrance) :
-        echo $départementsHautDeFrance . ' a la valeur ' . $value . '<br />';
-     endforeach;
+  $départementsHautDeFrance[02] = 'Aisne';
+  $départementsHautDeFrance[59] = 'Nord';
+  $départementsHautDeFrance[60] = 'Oise';
+  $départementsHautDeFrance[62] = 'Pas-de-Calais';
+  $départementsHautDeFrance[80] = 'Somme';
+  $départementsHautDeFrance[51] = 'Reims';
+  echo $départementsHautDeFrance[02] . ' - ' . $départementsHautDeFrance[59] . ' - ' . $départementsHautDeFrance[60] .
+  ' - ' . $départementsHautDeFrance[62] . ' - ' . $départementsHautDeFrance[80] . ' - ' . $départementsHautDeFrance[80]
+  . ' - ' . $départementsHautDeFrance[51];
+
 ?>
     
 </body>
