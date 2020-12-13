@@ -13,8 +13,8 @@
 
     <?php
      $month = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
-     foreach ($month as $key => $month) :
-        echo $month . ' a la clé ' . $key . '<br />';
+     foreach ($month as $month) :
+        echo $month . '<br />';
      endforeach;
 ?>
     
