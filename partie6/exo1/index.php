@@ -15,18 +15,17 @@
     </p>
 
     <?php
+// Détermine si  tous les paramètres d\'une url existent
   $url = 'https://exos-php/partie6/exo1/';
   if (!filter_var($url, FILTER_VALIDATE_URL) === false) {
-      echo('URL est valide');
+      echo('URL est valide .<br>. index.php?lastname=Nemare&firstname=Jean');
   } else {
       echo("URL n'est pas valide");
   }
 ?>
 
-    // $url = 'http://exos-php/partie6/exo1/';
-    // echo $url('index.php?lastname=Nemare&firstname=Jean');
 
-    ?>
+    
 
 </body>
 
