@@ -3,6 +3,9 @@
 
 if (isset($_GET['lastname']) && isset($_GET['firstname'])) {
     echo $_GET['lastname'] . ' ' . $_GET['firstname'];
+
+    // var_dump($_GET['lastname']) ;
+    // var_dump($_GET['firstname']) ;
 }
 ?>
 
