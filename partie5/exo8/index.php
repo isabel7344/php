@@ -12,8 +12,8 @@
  
 
     <?php
-     $month = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
-     foreach ($month as $month) :
+     $monthArray = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+     foreach ($monthArray as $month) :
         echo $month . '<br />';
      endforeach;
 ?>

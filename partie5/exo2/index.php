@@ -25,8 +25,8 @@ Avec le tableau de l'exercice 1, afficher la valeur de la troisième ligne de ce
     </p>
 
     <?php
-    $month = array ('janvier' ,'février' , 'mars' , 'avril','mai' ,'juin' , 'juillet' , 'août','septembre' ,'octobre' , 'novembre' , 'décembre');
-    var_dump ($month [2]);
+    $month = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+    var_dump($month[2]);
 
 ?>
     

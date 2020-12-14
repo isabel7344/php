@@ -12,11 +12,11 @@
  
 
     <?php
-    $départementsHautDeFrance[02] = 'Aisne';
-    $départementsHautDeFrance[59] = 'Nord';
-    $départementsHautDeFrance[60] = 'Oise';
-    $départementsHautDeFrance[62] = 'Pas-de-Calais';
-    $départementsHautDeFrance[80] = 'Somme';
+    $départementsHautDeFrance['02'] = 'Aisne';
+    $départementsHautDeFrance['59'] = 'Nord';
+    $départementsHautDeFrance['60'] = 'Oise';
+    $départementsHautDeFrance['62'] = 'Pas-de-Calais';
+    $départementsHautDeFrance['80'] = 'Somme';
     var_dump($départementsHautDeFrance);
 ?>
     

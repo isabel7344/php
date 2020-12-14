@@ -14,8 +14,8 @@ Afficher son contenu.
 </p>
 
 <?php
-$name ='doubleQuote';
-echo $name;
+    $name = 'doubleQuote';
+    echo $name;
 ?>
 
 
