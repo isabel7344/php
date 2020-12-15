@@ -5,11 +5,6 @@ $endDate = 'Param non présent ';
 if (isset($_GET['startDate']) && isset($_GET['endDate'])) {
     $startDate = $_GET['startDate'];
     $endDate = $_GET['endDate'];
-
-    // echo $_GET['lastname'] . ' ' . $_GET['firstname'];
-
-    // var_dump($_GET['lastname']) ;
-    // var_dump($_GET['firstname']) ;
 }
 ?>
 <!DOCTYPE html>
