@@ -36,6 +36,12 @@ if (isset($_GET['months']) && isset($_GET['years'])) {
     $firstDayInMonth = strftime('%u', strtotime($month . '/01/' . $years));
     var_dump($nbDays);
     var_dump($firstDayInMonth);
+
+    if ((($nbDays + $firstDayInMonth - 1) % 7) != 0) {
+        $extraCases = 7 - (($nbDays + $firstDayInMonth - 1) % 7);
+    } else {
+        $extraCases = 0;
+    }
 }
 
 ?>
@@ -78,15 +84,17 @@ if (isset($_GET['months']) && isset($_GET['years'])) {
             </thead>
             <tbody>
                 <tr>
-                    <?php for ($case = 1; $case <= ($nbDays + ($firstDayInMonth - 1)); $case++) { ?>
-                    <td class="align-middle <?= $case >= $firstDayInMonth ? '' : 'bg-secondary'?>
-                    <" style="width: 100px; height: 80px">
+                    <?php for ($case = 1; $case <= ($nbDays + ($firstDayInMonth - 1) + $extraCases); $case++) { ?>
+                    <td class="align-middle <?= $case >= $firstDayInMonth && $case - $firstDayInMonth + 1 <= $nbDays ? '' : 'bg-secondary'?>"
+                        style="width: 100px; height: 80px">
+
                         <!-- on n'affiche rien tant qu'on est pas au premier jour du mois puis des qu'on y est on affiche
                     le numero de case - firstDayInMonth ce qui permet de commencer les jours a 1 !
                     firstDayInMonth =  index du premier jour du mois Ex : Janvier premier jour = vendredi = 5
                     case = la case actuelle on  affiche Ex case = 5 - firstDayInMonth + 1 = 5 - 5 + 1 = 1 (premier jour du mois etc ect)
                     -->
-                        <?= $case >= $firstDayInMonth ? $case - $firstDayInMonth + 1 : '' ?>
+                        <?= $case >= $firstDayInMonth && $case - $firstDayInMonth + 1 <= $nbDays ? $case - $firstDayInMonth + 1 : '' ?>
+                    </td>
                     </td>
                     <?php if ($case % 7 == 0) { ?>
                     <!-- chaque semaine on change de ligne !-->
